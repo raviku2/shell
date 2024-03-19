@@ -1,0 +1,14 @@
+#!/bin/bash
+
+read name
+if command -v $name
+then
+        echo "Installed"
+        pwd
+        $name --version
+else
+        echo "Not installed"
+        sudo yum install $name -y
+        echo "$name installed"
+        $name --version
+fi

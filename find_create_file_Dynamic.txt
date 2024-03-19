@@ -1,0 +1,14 @@
+#!/bin/bash
+
+echo "Enter the file name"
+read file
+if [ -f ./$file ]
+then
+        echo "File Exists"
+        pwd
+else
+        echo "File doesn't exist"
+        mkdir $file
+        echo "$file is created"
+        pwd
+fi

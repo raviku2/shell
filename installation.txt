@@ -1,0 +1,11 @@
+#!/bin/bash
+
+if command -v git
+then
+        echo "Installed"
+        pwd
+else
+        echo "Not installed"
+        sudo yum install git -y
+        pwd
+fi

@@ -1,0 +1,14 @@
+#!/bin/bash
+
+echo "Enter the Directory name"
+read dir
+if [ -d ./$dir ]
+then
+        echo "Directory present"
+        pwd
+else
+        echo "Directory not present"
+        mkdir $dir
+        echo "$dir created"
+        pwd
+fi

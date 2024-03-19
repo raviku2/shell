@@ -1,0 +1,12 @@
+#!/bin/bash
+
+if [ -d ./devops ]
+then
+        echo "Directory Exists"
+        pwd
+else
+        echo "Directory doesn't exists"
+        echo "creating Directory"
+        mkdir devops
+        pwd
+fi
